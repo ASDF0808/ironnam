@@ -17,4 +17,4 @@ kill @e[tag=ironman3,scores={ironman1=20..}]
 kill @e[tag=ironman6,scores={ironman1=50..}]
 execute as @e[tag=ironman4] at @s unless entity @a[tag=ironman] run tag @a[distance=..1] add ironman
 execute as @e[tag=ironman4] at @s if entity @a[distance=..1,tag=ironman] run kill @s
-function irooon:sword 
+function irooon:sword

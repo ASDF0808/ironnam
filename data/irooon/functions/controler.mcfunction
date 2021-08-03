@@ -34,7 +34,7 @@ execute as @a[tag=ironman,nbt={SelectedItemSlot:3},scores={ironpower=5..,nano=10
 execute as @a[tag=ironman,nbt={SelectedItemSlot:8}] run title @s actionbar [{"text":"남은 에너지=","bold":true,"color":"aqua"},{"score":{"objective":"ironpower","name":"@s"},"bold":true,"color":"aqua"},{"text":"/1000"},{"text":" 벗기 ","color": "white"},{"score":{"objective":"nano","name":"@s"},"bold":true,"color":"aqua"},{"text":"/300입자 남음","bold":true,"color":"aqua"}]
 execute as @a[tag=ironman,nbt={SelectedItemSlot:8}] at @s run function irooon:unwear
 
-execute as @a[tag=ironman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={slot=0..2}] at @s run function irooon:slotset
+execute as @a[tag=ironman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={slot=0..2}] at @s run function irooon:slotset 
 scoreboard players add @a[tag=ironman] icool 0
 scoreboard players add @a[tag=ironman] icool1 0
 scoreboard players add @a[tag=ironman] icool2 0
