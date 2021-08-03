@@ -1,0 +1,3 @@
+execute as @a[tag=ironman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={slot=0..2}] at @s run scoreboard players add @s slot 1
+execute as @a[tag=ironman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={slot=3..}] at @s run scoreboard players set @s slot 0
+execute as @a[tag=ironman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] at @s run item replace entity @s weapon.mainhand with air

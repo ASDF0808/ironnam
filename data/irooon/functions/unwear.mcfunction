@@ -1,0 +1,2 @@
+execute as @a[tag=ironman,nbt={SelectedItemSlot:8},scores={ironman=1..}] at @s run summon minecraft:armor_stand ^ ^ ^-3 {ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:16711680}}},{id:"leather_leggings",Count:1b,tag:{display:{color:16711680}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:16711680}}},{id:"minecraft:player_head{SkullOwner:ironman}"}],HandItems:[{},{}],DisabledSlots:2039573,Tags:[ironman4,ironman],Silent:1b}
+execute as @a[tag=ironman,nbt={SelectedItemSlot:8},scores={ironman=1..}] at @s run tag @s remove ironman

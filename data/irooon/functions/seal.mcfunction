@@ -1,0 +1,5 @@
+execute as @a[tag=ironman,scores={ironpower=3..,nano=10..,ironman=1..,slot=1,icool5=..0},nbt={SelectedItemSlot:1}] at @s run summon minecraft:armor_stand ^ ^ ^ {DisabledSlots:2039583,Tags:["ironman3"],NoGravity:1b,Silent:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blue_concrete",Count:1b}],Small:1b}
+execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=1,ironpower=3..,nano=10..}] at @s run tp @e[tag=ironman3,distance=..1,sort=nearest] ~ ~1 ~ ~ ~
+execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,ironpower=3..,nano=10..,slot=1,icool5=..0}] at @s if entity @e[distance=..10,tag=!ironman,type=!armor_stand] run scoreboard players remove @s ironpower 3
+execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,nano=10..,slot=1,icool5=..0}] at @s if entity @e[distance=..10,tag=!ironman,type=!armor_stand] run scoreboard players remove @s nano 10
+execute as @a[tag=ironman,scores={ironman=1..,slot=1,icool5=..0},nbt={SelectedItemSlot:1}] at @s run scoreboard players set @s icool5 50

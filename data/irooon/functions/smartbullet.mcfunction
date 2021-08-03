@@ -1,0 +1,4 @@
+execute as @a[tag=ironman,scores={ironpower=5..,nano=20..,ironman=1..,icool1=..0},nbt={SelectedItemSlot:2}] at @s run summon minecraft:marker ^ ^3 ^ {DisabledSlots:2039583,Tags:[ironman6],NoGravity:1b,Silent:1b,Invisible:1b}
+scoreboard players set @a[tag=ironman,scores={ironpower=5..,nano=20..,ironman=1..,icool1=..0},nbt={SelectedItemSlot:2}] icool1 200
+execute as @a[tag=ironman,nbt={SelectedItemSlot:2},scores={ironman=1..,ironpower=5..,nano=20..,icool1=..0}] at @s run scoreboard players remove @s ironpower 5
+execute as @a[tag=ironman,nbt={SelectedItemSlot:2},scores={ironman=1..,nano=20..,icool1=..0}] at @s run scoreboard players remove @s nano 20
