@@ -19,3 +19,6 @@ scoreboard objectives add icool6 dummy
 scoreboard objectives add canoncool dummy
 scoreboard objectives add iloop dummy
 scoreboard objectives add hulkdeath dummy
+scoreboard objectives add ironmode dummy
+scoreboard objectives add swordlive dummy
+scoreboard objectives add usesword minecraft.used:minecraft.iron_sword

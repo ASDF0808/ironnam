@@ -25,6 +25,9 @@ execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=2,ir
 execute as @a[tag=ironman,nbt={SelectedItemSlot:2},scores={ironpower=3..,nano=10..,slot=2}] run title @s actionbar [{"text":"남은 에너지=","bold":true,"color":"aqua"},{"score":{"objective":"ironpower","name":"@s"},"bold":true,"color":"aqua"},{"text": "/1000"},{"text":" 기술:수리 머신 ","color":"yellow"},{"score":{"objective":"nano","name":"@s"},"bold":true,"color":"aqua"},{"text":"/300입자 남음","bold":true,"color":"aqua"}]
 execute as @a[tag=ironman,nbt={SelectedItemSlot:2},scores={slot=2,ironpower=30..,nano=100..}] at @s unless entity @e[tag=charge1] run function irooon:charge
 
+execute as @a[tag=ironman,nbt={SelectedItemSlot:3},scores={ironpower=5..,nano=10..}] run title @s actionbar [{"text":"남은 에너지=","bold":true,"color":"aqua"},{"score":{"objective":"ironpower","name":"@s"},"bold":true,"color":"aqua"},{"text": "/1000"},{"text":" 기술:단검 ","color":"yellow"},{"score":{"objective":"nano","name":"@s"},"bold":true,"color":"aqua"},{"text":"/300입자 남음","bold":true,"color":"aqua"}]
+execute as @a[tag=ironman,nbt={SelectedItemSlot:3},scores={ironpower=5..,nano=10..}] at @s run give @s iron_sword{display:{'{"text":"단검","italic:"true"}'}} 1
+
 #execute as @a[tag=ironman,nbt={SelectedItemSlot:3},scores={ironpower=200..,nano=100..}] run title @s actionbar [{"text":"남은 에너지=","bold":true,"color":"aqua"},{"score":{"objective":"ironpower","name":"@s"},"bold":true,"color":"aqua"},{"text":"/1000"},{"text":" 헐크 버스터 ","color": "white"},{"score":{"objective":"nano","name":"@s"},"bold":true,"color":"aqua"},{"text":"/300입자 남음","bold":true,"color":"aqua"}]
 #execute as @a[tag=ironman,nbt={SelectedItemSlot:3},scores={ironman=1..,ironpower=200..,nano=100..}] at @s unless entity @e[tag=hulkbuster] unless entity @a[tag=hulk2] run function irooon:summon
 
