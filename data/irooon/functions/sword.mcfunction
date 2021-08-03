@@ -1,5 +1,4 @@
 #싱글 
-
 execute as @a[tag=ironman,scores={usesword=1..,ironmode=1}] at @s run summon marker ~ ~ ~ {Tags:[ironsword]}
 execute as @a[tag=ironman,scores={usesword=1..,ironmode=1}] at @s run tp @e[tag=ironsword,sort=nearest,distance=..1] ~ ~ ~ ~ 180
 execute as @e[tag=ironsword] at @s run tp @s ~ ~ ~ ~ ~0.8
