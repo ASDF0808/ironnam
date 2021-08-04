@@ -23,3 +23,4 @@ scoreboard objectives add usesword minecraft.used:minecraft.wooden_sword
 scoreboard objectives add ironx dummy
 scoreboard objectives add irony dummy
 scoreboard objectives add ironz dummy
+scoreboard objectives add hulkdeath dummy
