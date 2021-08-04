@@ -138,7 +138,3 @@ execute as @e[tag=ironsword1] at @s positioned ~ ~1 ~ positioned ^ ^ ^3 run effe
 scoreboard players add @e[tag=ironsword1] swordlive 1
 kill @e[tag=ironsword1,scores={swordlive=10..}]
 
-
-
-#소드마스터 설정
-

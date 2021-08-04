@@ -5,5 +5,8 @@ execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,il
 execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=..149}] positioned ^ ^ ^0.5 unless block ~ ~ ~ #irooon:likeair run summon creeper ~ ~ ~ {ExplosionRadius:2,Fuse:0}
 execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=..149}] positioned ^ ^ ^0.5 if block ~ ~ ~ #irooon:likeair run effect give @e[distance=..1,tag=!ironman,type=#irooon:undead] instant_health 1 4 true
 execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=..149}] positioned ^ ^ ^0.5 if block ~ ~ ~ #irooon:likeair run effect give @e[distance=..1,tag=!ironman,type=!#irooon:undead] instant_damage 1 4 true
+
+execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=..149}] positioned ^ ^ ^0.5 positioned ~ ~-1 ~ if block ~ ~ ~ #irooon:likeair run effect give @e[distance=..1,tag=!ironman,type=#irooon:undead] instant_health 1 4 true
+execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=..149}] positioned ^ ^ ^0.5 positioned ~ ~-1 ~ if block ~ ~ ~ #irooon:likeair run effect give @e[distance=..1,tag=!ironman,type=!#irooon:undead] instant_damage 1 4 true
 execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=..149}] positioned ^ ^ ^0.5 if block ~ ~ ~ #irooon:likeair run function irooon:unibeam
-execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=150..}] run scoreboard players set @s iloop 0
+execute as @a[tag=ironman,nbt={SelectedItemSlot:1},scores={ironman=1..,slot=0,iloop=150..}] run scoreboard players set @s iloop 0 

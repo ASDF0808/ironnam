@@ -17,3 +17,4 @@ scoreboard players set @a[scores={usesword=1..}] usesword 0
 execute as @a[tag=ironman] at @s run scoreboard players add @s ironmode 1
 execute as @a[tag=ironman,scores={ironmode=11..}] at @s run scoreboard players set @s ironmode 1
 scoreboard players add @a ironmode 1
+

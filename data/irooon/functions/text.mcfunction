@@ -1,7 +1,6 @@
 tellraw @a [{"text":"ironnam","color":"dark_red"},{"text":"-made by jiung","color":"aqua"}]
 scoreboard players set @a slot 0
 scoreboard objectives add ironman minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add ironman5 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add ironman1 dummy
 scoreboard objectives add nano dummy
 scoreboard objectives add nano1 dummy
@@ -18,7 +17,9 @@ scoreboard objectives add icool5 dummy
 scoreboard objectives add icool6 dummy
 scoreboard objectives add canoncool dummy
 scoreboard objectives add iloop dummy
-scoreboard objectives add hulkdeath dummy
 scoreboard objectives add ironmode dummy
 scoreboard objectives add swordlive dummy
 scoreboard objectives add usesword minecraft.used:minecraft.wooden_sword
+scoreboard objectives add ironx dummy
+scoreboard objectives add irony dummy
+scoreboard objectives add ironz dummy

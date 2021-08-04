@@ -13,3 +13,21 @@ execute as @a[scores={ironman=1..,slot=0,ironpower=2..},tag=ironman,nbt={Selecte
 execute as @a[scores={ironman=1..,slot=0,ironpower=2..},tag=ironman,nbt={SelectedItemSlot:2}] at @s positioned ^-0.4 ^ ^1 run summon armor_stand ~ ~ ~ {Tags:[sheild],Invisible:1b,Silent:1b} 
 execute as @a[scores={ironman=1..,slot=0,ironpower=2..},tag=ironman,nbt={SelectedItemSlot:2}] at @s positioned ^0.6 ^ ^1 run summon armor_stand ~ ~ ~ {Tags:[sheild],Invisible:1b,Silent:1b}
 execute as @a[scores={ironman=1..,slot=0,ironpower=2..},tag=ironman,nbt={SelectedItemSlot:2}] at @s run scoreboard players remove @s ironpower 1
+
+execute as @e[tag=sheildknock] store result score @s ironx run data get entity @s Pos[0] 1200
+execute as @e[tag=sheildknock] store result score @s irony run data get entity @s Pos[1] 1200
+execute as @e[tag=sheildknock] store result score @s ironz run data get entity @s Pos[2] 1200
+execute as @a[tag=ironman] store result score @s ironx run data get entity @s Pos[0] 1200
+execute as @a[tag=ironman] store result score @s irony run data get entity @s Pos[1] 1200
+execute as @a[tag=ironman] store result score @s ironz run data get entity @s Pos[2] 1200
+scoreboard players operation @e[tag=sheildknock] ironx -= @a[tag=ironman] ironx
+scoreboard players operation @e[tag=sheildknock] irony -= @a[tag=ironman] irony
+scoreboard players operation @e[tag=sheildknock] ironz -= @a[tag=ironman] ironz
+execute as @e[tag=sheildknock] at @s run tp @s ~ ~1.7 ~
+execute as @e[tag=sheildknock] store result entity @s Motion[0] double 0.005 run scoreboard players get @s ironx
+execute as @e[tag=sheildknock] store result entity @s Motion[1] double 0.005 run scoreboard players get @s irony
+execute as @e[tag=sheildknock] store result entity @s Motion[2] double 0.005 run scoreboard players get @s ironz
+execute as @e[tag=sheildknock] run tag @s remove sheildknock
+scoreboard players reset @e ironx
+scoreboard players reset @e irony
+scoreboard players reset @e ironz
