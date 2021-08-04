@@ -215,6 +215,6 @@ execute if entity @a[tag=hulk2,nbt={SelectedItemSlot:5},scores={ironman=1..}] as
 execute as @a[tag=hulk2,scores={ironman=1..}] at @s run scoreboard players set @s ironman 0
 
 
-execute as @a[tag=hulk2,nbt={SelectedItemSlot:5}] run title @s actionbar [{"text":" 기술:펀치 ","color":"blue","bold": true}]
+execute as @a[tag=hulk2,nbt={SelectedItemSlot:5}] run title @s actionbar [{"text":" 기술:펀치 ","color":"red","bold": true}]
 execute as @a[tag=hulk2,nbt={SelectedItemSlot:6}] run title @s actionbar [{"text":" 기술:이동 ","color":"blue","bold": true}]
 execute as @a[tag=hulk2,nbt={SelectedItemSlot:7}] run title @s actionbar [{"text":" 기술:비행 ","color":"blue","bold": true}]
