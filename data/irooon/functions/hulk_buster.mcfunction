@@ -1,4 +1,4 @@
-scoreboard players add @e[tag=hulk1] canoncool 1
+scoreboard players add @e[tag=hulk1] canoncool 10
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^ ^5.7 ^11.2 {ArmorItems:[{},{},{},{id:"beacon",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^0.25 ^1.8 ^ {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^-0.25 ^1.8 ^ {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
