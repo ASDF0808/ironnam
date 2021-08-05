@@ -1,5 +1,5 @@
-scoreboard players add @e[tag=hulk1] canoncool 10
-execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^ ^5.7 ^11.2 {ArmorItems:[{},{},{},{id:"beacon",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
+scoreboard players add @e[tag=hulk1] canoncool 1
+execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^ ^2 ^1 {ArmorItems:[{},{},{},{id:"beacon",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^0.25 ^1.8 ^ {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^-0.25 ^1.8 ^ {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^0.65 ^1.8 ^ {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
@@ -192,8 +192,13 @@ execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armo
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^-1.25 ^-1.2 ^1.2 {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^0.65 ^-1.2 ^1.2 {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
 execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armor_stand ^-0.65 ^-1.2 ^1.2 {ArmorItems:[{},{},{},{id:"red_wool",Count:1b}],NoGravity:1b,Silent:1b,Tags:[hulk1],Invisible:1b,Marker:1b}
+kill @e[tag=hulk1,scores={canoncool=1..}]
 
-
+tp @e[name="asdd",nbt={Size:3}] 0 0 0
+kill @e[name="asdd",nbt={Size:3}]
+kill @e[name="asdd",nbt={Size:2}]
+kill @e[name="asdd",nbt={Size:1}]
+kill @e[name="asdd",nbt={Size:0}]
 effect give @e[tag=hulk] invisibility 10000 255 true
 effect give @e[tag=hulk] slow_falling 10000 0 true
 effect give @e[tag=hulk3] invisibility 10000 255 true
@@ -207,7 +212,6 @@ execute as @e[tag=hulkbuster] at @s run scoreboard players add @s hulkdeath 0
 execute as @a[tag=hulk2,nbt={SelectedItemSlot:6},scores={ironman=1..}] as @e[tag=hulkbuster] at @s if block ^ ^ ^1 #irooon:likeair run tp @s[tag=hulkbuster] ^ ^ ^1
 execute as @a[tag=hulk2,nbt={SelectedItemSlot:7},scores={ironman=1..}] as @e[tag=hulkbuster] at @s if block ^ ^ ^ #irooon:likeair run tp @s[tag=hulkbuster] ^ ^ ^
 execute as @e[tag=hulk2] run data modify entity @e[tag=hulkbuster,limit=1] Rotation[0] set from entity @s Rotation[0]
-kill @e[tag=hulk1,scores={canoncool=1..}]
 execute as @a[tag=hulk2] at @s unless entity @e[tag=hulkbuster] run tag @s remove hulk2
 execute as @e[tag=hulk] at @s positioned ~ ~3 ~ if block ~ ~ ~ water run kill @s
 execute if entity @a[tag=hulk2,nbt={SelectedItemSlot:5},scores={ironman=1..}] as @e[tag=hulk] at @s run effect give @s resistance 3 255 true
@@ -215,6 +219,6 @@ execute if entity @a[tag=hulk2,nbt={SelectedItemSlot:5},scores={ironman=1..}] as
 execute as @a[tag=hulk2,scores={ironman=1..}] at @s run scoreboard players set @s ironman 0
 
 
-execute as @a[tag=hulk2,nbt={SelectedItemSlot:5}] run title @s actionbar [{"text":" 기술:펀치 ","color":"red","bold": true}]
-execute as @a[tag=hulk2,nbt={SelectedItemSlot:6}] run title @s actionbar [{"text":" 기술:이동 ","color":"red","bold": true}]
-execute as @a[tag=hulk2,nbt={SelectedItemSlot:7}] run title @s actionbar [{"text":" 기술:비행 ","color":"red","bold": true}]
+execute as @a[tag=hulk2,nbt={SelectedItemSlot:5}] run title @s actionbar [{"text":" 기술:펀치 ","color":"blue","bold": true}]
+execute as @a[tag=hulk2,nbt={SelectedItemSlot:6}] run title @s actionbar [{"text":" 기술:이동 ","color":"blue","bold": true}]
+execute as @a[tag=hulk2,nbt={SelectedItemSlot:7}] run title @s actionbar [{"text":" 기술:비행 ","color":"blue","bold": true}]
