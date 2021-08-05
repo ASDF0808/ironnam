@@ -195,6 +195,9 @@ execute as @e[tag=hulkbuster] at @s if entity @a[distance=..100] run summon armo
 kill @e[tag=hulk1,scores={canoncool=1..}]
 
 tp @e[name="asdd",nbt={Size:3}] 0 0 0
+tp @e[name="asdd",nbt={Size:2}] 0 0 0
+tp @e[name="asdd",nbt={Size:1}] 0 0 0
+tp @e[name="asdd",nbt={Size:0}] 0 0 0
 kill @e[name="asdd",nbt={Size:3}]
 kill @e[name="asdd",nbt={Size:2}]
 kill @e[name="asdd",nbt={Size:1}]
